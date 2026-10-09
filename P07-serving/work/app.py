@@ -52,6 +52,7 @@ def predict(order: Order):
 @app.get("/model-info")
 def model_info():
     "Describe the model this service is running."
+    # TODO: return the three keys described in the task
     return {
         "features": FEATURES,
         "model_type": type(model).__name__,
